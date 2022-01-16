@@ -81,7 +81,7 @@ venv-run-test-slow:
 
 serving-docs: ## Serving documentation.
 serving-docs:
-	cd docs && make serving
+	cd docs && bundle exec jekyll serve --livereload
 
 clean: ## Clean current directory.
 clean:
